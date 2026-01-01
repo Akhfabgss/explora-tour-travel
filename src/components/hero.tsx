@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 const Hero = () => {
+  const router = useRouter();
+
   return (
       <section id="home" className="flex flex-col lg:flex-row items-stretch bg-[#F7FAFCFF]">
         {/* LEFT */}
@@ -43,10 +46,10 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  href="#ticket"
+                  href="#tour"
                   className="hover:text-[#28aeb1] transition"
                 >
-                  Ticket
+                  Tour
                 </a>
               </li>
               
@@ -65,12 +68,16 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#19355d] hover:bg-[#28aeb1] text-white font-semibold px-8 py-4 rounded-lg transition">
-              Lihat Layanan
+            <button 
+            onClick={() => router.push('/tour')}
+            className="bg-[#19355d] hover:bg-[#28aeb1] text-white font-semibold px-8 py-4 rounded-lg transition">
+              Cari Wisata
             </button>
 
-            <button className="bg-gray-200 hover:bg-gray-300 text-[#19355d] font-semibold px-8 py-4 rounded-lg transition">
-              Cari Tiket & Wisata
+            <button 
+            onClick={() => router.push('/maintenance')}
+            className="bg-gray-200 hover:bg-gray-300 text-[#19355d] font-semibold px-8 py-4 rounded-lg transition">
+              Cari Tiket
             </button>
           </div>
         </div>
