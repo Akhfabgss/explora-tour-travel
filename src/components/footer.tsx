@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Twitter, Phone } from "lucide-react";
+import { Music3, Instagram, Phone } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
               { label: "Home", id: "home" },
               { label: "popular", id: "popular" },
               { label: "Services", id: "services" },
-              { label: "Ticket", id: "ticket" },
+              { label: "Tour", id: "tour" },
               { label: "Testimoni", id: "testimoni" },
             ].map((item) => (
               <a
@@ -40,20 +40,20 @@ export default function Footer() {
 
           {/* SOCIAL */}
           <div className="mt-10 flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              <Facebook size={20} />
+            <a target="_blank" href="https://www.tiktok.com/@official.exploratour?is_from_webapp=1&sender_device=pc" className="text-gray-400 hover:text-white transition">
+              <Music3 size={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              <Twitter size={20} />
+            <a target="_blank" href="https://www.instagram.com/exploratravel.co/" className="text-gray-400 hover:text-white transition">
+              <Instagram size={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
+            <a target="_blank" href="https://wa.me/6281210272198" className="text-gray-400 hover:text-white transition">
               <Phone size={20} />
             </a>
           </div>
 
           {/* COPYRIGHT */}
           <p className="mt-10 text-sm text-gray-500">
-            © Copyright 2020, Treact Inc. All Rights Reserved.
+            © Copyright 2020, Kodehana Inc. All Rights Reserved.
           </p>
         </div>
       </div>

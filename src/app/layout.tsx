@@ -4,7 +4,7 @@ export const metadata = {
   title: "Explora Tour & Travel",
   description: "Find Perfect Hotels Anywhere",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo-web.png",
   },
 };
 

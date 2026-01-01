@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const WA_NUMBER = "6281385997264";
+const WA_NUMBER = "6281210272198";
 
 const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`
 Halo Admin 
